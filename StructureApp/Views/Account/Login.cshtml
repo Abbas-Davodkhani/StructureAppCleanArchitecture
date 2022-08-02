@@ -1,0 +1,32 @@
+﻿@model StructureApp.Models.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>View</h1>
+
+<form asp-action="Login" asp-controller="Account" method="Post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-element-row">
+                                <label asp-for="Email" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="Email" class="input-element">
+                                    <i class="fad fa-user"></i>
+                                </div>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+
+                            </div>
+
+                            <div class="form-element-row">
+                                <label asp-for="Password" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="Password" class="input-element">
+                                    <i class="fad fa-mailbox"></i>
+                                </div>
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+
+                            <button class="btn btn-success" type="submit">ورود</button>
+</form>
+

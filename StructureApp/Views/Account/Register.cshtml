@@ -1,0 +1,63 @@
+﻿@model StructureApp.Models.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Register</h1>
+
+
+<form asp-action="Register" asp-controller="Account" method="Post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-element-row">
+                                <label asp-for="FullName" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="FullName" class="input-element">
+                                    <i class="fad fa-user"></i>
+                                </div>
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+
+                            </div>
+
+                            <div class="form-element-row">
+                                <label asp-for="Email" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="Email" class="input-element">
+                                    <i class="fad fa-mailbox"></i>
+                                </div>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-element-row">
+                                <label asp-for="Password" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="Password" class="input-element">
+                                    <i class="fad fa-key"></i>
+                                </div>
+                                <span asp-validation-for="Password" class="text-danger"></span>
+
+                            </div>   
+                            <div class="form-element-row">
+                                <label asp-for="RePassword" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="RePassword" class="input-element">
+                                    <i class="fad fa-key"></i>
+                                </div>
+                                <span asp-validation-for="RePassword" class="text-danger"></span>
+
+                            </div>
+                            <div class="form-element-row">
+                                <label asp-for="PhoneNumber" class="label-element"> </label>
+                                <div class="form-element-with-icon">
+                                    <input asp-for="PhoneNumber" class="input-element">
+                                    <i class="fad fa-mobile-alt"></i>
+                                </div>
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+                            </div>
+                            <button type="submit">
+                                ثبت نام
+                            </button>
+
+</form>
+
