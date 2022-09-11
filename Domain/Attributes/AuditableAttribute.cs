@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace Domain.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]

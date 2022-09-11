@@ -10,7 +10,7 @@ namespace Persistance.Context
         {
 
         }
-
+      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //builder.Entity<User>().Property<DateTime?>("InsertTime");

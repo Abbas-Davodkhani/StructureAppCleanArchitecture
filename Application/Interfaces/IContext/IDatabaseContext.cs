@@ -4,6 +4,7 @@ namespace Application.Interfaces.IContext
 {
     public interface IDatabaseContext
     {
+        
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);
 
